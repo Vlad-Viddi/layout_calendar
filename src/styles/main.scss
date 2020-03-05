@@ -23,20 +23,12 @@ body {
     margin: $block-gap $block-gap 0 0;
     display: none;
     cursor: pointer;
+    transition: background-color 1s, transform 1s;
 
     &:hover {
       background-color: pink;
-      animation-name: onhover;
-      animation-duration: 500ms;
-      animation-timing-function: linear;
+      transform: translate(0, -20px);
     }
-  }
-}
-
-@keyframes onhover {
-  100% {
-    position: relative;
-    bottom: 20px;
   }
 }
 
